@@ -5,5 +5,5 @@ from django.http import HttpResponse
 
 # Create your views here.
 def books_list(request):
-    books = Book.title
+    books = Book.objects.all()
     return HttpResponse(books)
